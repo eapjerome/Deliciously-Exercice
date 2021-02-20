@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="32dp"
+    tools:context=".TutorielFragment">
+
+    <TextView
+        android:id="@+id/tv_tutoriel_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tutoriel"
+        android:textColor="@android:color/white"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_tutoriel_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tutoriel_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pour afficher ton profil, appuies sur le bouton &quot;Profil&quot;."
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/tv_tutoriel_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tutoriel_title" />
+
+    <TextView
+        android:id="@+id/tv_tutoriel_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pour voir les remarques, appuies sur le bouton &quot;Remarques&quot;."
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/tv_tutoriel_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tutoriel_1" />
+
+    <TextView
+        android:id="@+id/tv_tutoriel_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pour visiter le site internet, appuies sur le bouton &quot;Site&quot;."
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/tv_tutoriel_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tutoriel_2" />
+
+    <TextView
+        android:id="@+id/tv_tutoriel_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pour retourner à la page d'accueil, appuies sur le bouton &quot;Retour&quot;."
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/btn_tutoriel_arrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tutoriel_3" />
+
+    <ImageView
+        android:id="@+id/btn_tutoriel_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back_white_48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_tutoriel_4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

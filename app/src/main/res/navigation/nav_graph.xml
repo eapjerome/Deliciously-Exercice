@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.eap.deliciously.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.eap.deliciously.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_menu">
+
+        <action
+            android:id="@+id/action_menuFragment_to_tutorielFragment"
+            app:destination="@id/tutorielFragment" />
+
+        <action
+            android:id="@+id/action_menuFragment_to_profilFragment"
+            app:destination="@id/profilFragment" />
+
+        <action
+            android:id="@+id/action_menuFragment_to_remarquesFragment"
+            app:destination="@id/remarquesFragment" />
+
+        <action
+            android:id="@+id/action_menuFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tutorielFragment"
+        android:name="com.eap.deliciously.TutorielFragment"
+        android:label="TutorielFragment"
+        tools:layout="@layout/fragment_tutoriel" />
+
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.eap.deliciously.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+
+    <fragment
+        android:id="@+id/remarquesFragment"
+        android:name="com.eap.deliciously.RemarquesFragment"
+        android:label="fragment_remarques"
+        tools:layout="@layout/fragment_remarques" />
+
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.eap.deliciously.WebViewFragment"
+        android:label="WebViewFragment"
+        tools:layout="@layout/fragment_webview" />
+
+</navigation>
